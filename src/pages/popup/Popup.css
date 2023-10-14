@@ -1,13 +1,13 @@
 .App {
-  position: absolute;
+  position: relative;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  text-align: center;
+
   height: 100%;
   padding: 10px;
-  background-color: #282c34;
+  background-color: #E5E5DC;
 }
 
 .App-logo {

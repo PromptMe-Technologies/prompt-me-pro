@@ -41,12 +41,20 @@ export default defineConfig({
   ],
   publicDir,
   build: {
+    chunkSizeWarningLimit: 100,
+ 
     outDir,
     /** Can slowDown build speed. */
     // sourcemap: isDev,
     minify: isProduction,
     reportCompressedSize: isProduction,
     rollupOptions: {
+      onwarn(warning, warn) {
+        if (warning.code === "MODULE_LEVEL_DIRECTIVE") {
+          return;
+        }
+        warn(warning);
+      },
       input: {
         devtools: resolve(pagesDir, "devtools", "index.html"),
         panel: resolve(pagesDir, "panel", "index.html"),
