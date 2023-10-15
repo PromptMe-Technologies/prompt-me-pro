@@ -37,6 +37,6 @@ console.log("content loaded");
 __vitePreload(() => {
   const dynamicImport = (path) => import(path);
   dynamicImport(
-    "../../../assets/js/index2.js"
+    "../../../assets/js/index.js"
   );
 }, true ? [] : void 0);
