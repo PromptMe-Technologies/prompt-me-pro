@@ -8,6 +8,7 @@
 /dist
 
 # etc
+.env
 .DS_Store
 .env.local
 .idea
