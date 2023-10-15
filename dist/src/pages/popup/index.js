@@ -1,6 +1,5 @@
 import "../../../assets/js/modulepreload-polyfill.js";
-import { r as react, j as jsxDEV, c as createRoot, F as Fragment } from "../../../assets/js/jsx-dev-runtime.js";
-import { a as addHmrIntoView } from "../../../assets/js/_virtual_reload-on-update-in-view.js";
+import { r as react, j as jsxDEV, a as addHmrIntoView, c as createRoot, F as Fragment } from "../../../assets/js/_virtual_reload-on-update-in-view.js";
 import { a as attachTwindStyle } from "../../../assets/js/twind.js";
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
 const index = "";

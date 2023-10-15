@@ -1,6 +1,5 @@
 import "../../../assets/js/modulepreload-polyfill.js";
-import { j as jsxDEV, c as createRoot } from "../../../assets/js/jsx-dev-runtime.js";
-import { a as addHmrIntoView } from "../../../assets/js/_virtual_reload-on-update-in-view.js";
+import { j as jsxDEV, a as addHmrIntoView, c as createRoot } from "../../../assets/js/_virtual_reload-on-update-in-view.js";
 import { a as attachTwindStyle } from "../../../assets/js/twind.js";
 const Panel$1 = "";
 var _jsxFileName$1 = "C:\\Users\\ragha\\OneDrive\\Desktop\\prompt-me-pro\\src\\pages\\panel\\Panel.tsx";

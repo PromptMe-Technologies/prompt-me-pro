@@ -1,5 +1,4 @@
-import { r as react, j as jsxDEV, c as createRoot } from "./jsx-dev-runtime.js";
-import { a as addHmrIntoView } from "./_virtual_reload-on-update-in-view.js";
+import { r as react, j as jsxDEV, a as addHmrIntoView, c as createRoot } from "./_virtual_reload-on-update-in-view.js";
 import { a as attachTwindStyle } from "./twind.js";
 var _jsxFileName$1 = "C:\\Users\\ragha\\OneDrive\\Desktop\\prompt-me-pro\\src\\pages\\content\\components\\Demo\\app.tsx";
 function App() {
