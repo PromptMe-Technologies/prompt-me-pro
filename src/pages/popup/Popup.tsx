@@ -9,8 +9,9 @@ import withSuspense from "@src/shared/hoc/withSuspense";
 import axios from "axios";
 import { Configuration, OpenAIApi } from "openai";
 
+// @ts-ignore
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: import.meta.env.VITE_OPEN_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
