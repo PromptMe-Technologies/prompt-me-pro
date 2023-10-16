@@ -2630,7 +2630,7 @@ configuration$1.Configuration = Configuration;
 })(dist);
 var _jsxFileName$1 = "C:\\Users\\ragha\\OneDrive\\Desktop\\prompt-me-pro\\src\\pages\\popup\\Popup.tsx";
 const configuration = new dist.Configuration({
-  apiKey: "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"
+  apiKey: ""
 });
 const openai = new dist.OpenAIApi(configuration);
 const Popup = () => {
@@ -2647,6 +2647,8 @@ const Popup = () => {
     writingStyle: "",
     decideTone: "",
     targetAudience: "",
+    role: "system",
+    content: "You are a helpful prompt generation assistant. Generate short text prompts based on the user's specifications.",
     wordLimit: ""
   });
   const [promptRes, setpromptRes] = react.exports.useState("");
@@ -2742,7 +2744,7 @@ const Popup = () => {
           children: "Enter Your Solana wallet address to airdrop you tokens"
         }, void 0, false, {
           fileName: _jsxFileName$1,
-          lineNumber: 132,
+          lineNumber: 135,
           columnNumber: 11
         }, void 0), /* @__PURE__ */ jsxDEV("div", {
           className: "flex justify-evenly align-middle",
@@ -2757,17 +2759,17 @@ const Popup = () => {
             required: true
           }, void 0, false, {
             fileName: _jsxFileName$1,
-            lineNumber: 139,
+            lineNumber: 142,
             columnNumber: 13
           }, void 0)
         }, void 0, false, {
           fileName: _jsxFileName$1,
-          lineNumber: 138,
+          lineNumber: 141,
           columnNumber: 11
         }, void 0)]
       }, void 0, true, {
         fileName: _jsxFileName$1,
-        lineNumber: 131,
+        lineNumber: 134,
         columnNumber: 9
       }, void 0), /* @__PURE__ */ jsxDEV("div", {
         className: "inputDiv w-full",
@@ -2778,12 +2780,12 @@ const Popup = () => {
             children: [" ", totalCoins]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 155,
+            lineNumber: 158,
             columnNumber: 13
           }, void 0), "\u{1FA99} earned"]
         }, void 0, true, {
           fileName: _jsxFileName$1,
-          lineNumber: 153,
+          lineNumber: 156,
           columnNumber: 11
         }, void 0), /* @__PURE__ */ jsxDEV("form", {
           className: "grid-cols-2 grid gap-2",
@@ -2795,7 +2797,7 @@ const Popup = () => {
               children: "Prompt Purpose"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 163,
+              lineNumber: 166,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("input", {
               type: "text",
@@ -2808,12 +2810,12 @@ const Popup = () => {
               required: true
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 169,
+              lineNumber: 172,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 162,
+            lineNumber: 165,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "mb-3",
@@ -2823,7 +2825,7 @@ const Popup = () => {
               children: "Subject"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 181,
+              lineNumber: 184,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("input", {
               type: "text",
@@ -2836,12 +2838,12 @@ const Popup = () => {
               required: true
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 187,
+              lineNumber: 190,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 180,
+            lineNumber: 183,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "mb-3",
@@ -2851,7 +2853,7 @@ const Popup = () => {
               children: "Writing style"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 199,
+              lineNumber: 202,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("select", {
               id: "text3",
@@ -2865,115 +2867,115 @@ const Popup = () => {
                 children: "Writing Style"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 213,
+                lineNumber: 216,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Academic",
                 children: "Academic"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 214,
+                lineNumber: 217,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Business",
                 children: "Business"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 215,
+                lineNumber: 218,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Casual",
                 children: "Casual"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 216,
+                lineNumber: 219,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Creative",
                 children: "Creative"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 217,
+                lineNumber: 220,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Descriptive",
                 children: "Descriptive"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 218,
+                lineNumber: 221,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Emotional",
                 children: "Emotional"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 219,
+                lineNumber: 222,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Expository",
                 children: "Expository"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 220,
+                lineNumber: 223,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Formal",
                 children: "Formal"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 221,
+                lineNumber: 224,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Informal",
                 children: "Informal"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 222,
+                lineNumber: 225,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Legal",
                 children: "Legal"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 223,
+                lineNumber: 226,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Medical",
                 children: "Medical"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 224,
+                lineNumber: 227,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Narrative",
                 children: "Narrative"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 225,
+                lineNumber: 228,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Poetic",
                 children: "Poetic"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 226,
+                lineNumber: 229,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Technical",
                 children: "Technical"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 227,
+                lineNumber: 230,
                 columnNumber: 17
               }, void 0)]
             }, void 0, true, {
               fileName: _jsxFileName$1,
-              lineNumber: 205,
+              lineNumber: 208,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 198,
+            lineNumber: 201,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "mb-3",
@@ -2983,7 +2985,7 @@ const Popup = () => {
               children: "Decide Tone"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 231,
+              lineNumber: 234,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("select", {
               id: "text4",
@@ -2997,122 +2999,122 @@ const Popup = () => {
                 children: "Decide Tone"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 245,
+                lineNumber: 248,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Angry",
                 children: "Angry"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 246,
+                lineNumber: 249,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Assertive",
                 children: "Assertive"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 247,
+                lineNumber: 250,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Confident",
                 children: "Confident"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 248,
+                lineNumber: 251,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Cooperative",
                 children: "Cooperative"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 249,
+                lineNumber: 252,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Curious",
                 children: "Curious"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 250,
+                lineNumber: 253,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Empathetic",
                 children: "Empathetic"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 251,
+                lineNumber: 254,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Encouraging",
                 children: "Encouraging"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 252,
+                lineNumber: 255,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Enthusiastic",
                 children: "Enthusiastic"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 253,
+                lineNumber: 256,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Excited",
                 children: "Excited"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 254,
+                lineNumber: 257,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Friendly",
                 children: "Friendly"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 255,
+                lineNumber: 258,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Funny",
                 children: "Funny"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 256,
+                lineNumber: 259,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Joyful",
                 children: "Joyful"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 257,
+                lineNumber: 260,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Sad",
                 children: "Sad"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 258,
+                lineNumber: 261,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Serious",
                 children: "Serious"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 259,
+                lineNumber: 262,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Surprised",
                 children: "Surprised"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 260,
+                lineNumber: 263,
                 columnNumber: 17
               }, void 0)]
             }, void 0, true, {
               fileName: _jsxFileName$1,
-              lineNumber: 237,
+              lineNumber: 240,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 230,
+            lineNumber: 233,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "mb-3",
@@ -3122,7 +3124,7 @@ const Popup = () => {
               children: "Target Audience"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 264,
+              lineNumber: 267,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("select", {
               id: "text5",
@@ -3137,94 +3139,94 @@ const Popup = () => {
                 children: "Select Target Audience"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 278,
+                lineNumber: 281,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Teenager",
                 children: "Teenager"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 281,
+                lineNumber: 284,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Business Audience",
                 children: "Business Audience"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 282,
+                lineNumber: 285,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Expert Audience",
                 children: "Expert Audience"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 283,
+                lineNumber: 286,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Hostile Audience",
                 children: "Hostile Audience"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 284,
+                lineNumber: 287,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "Neutral Audience",
                 children: "Neutral Audience"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 285,
+                lineNumber: 288,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Boss",
                 children: "My Boss"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 286,
+                lineNumber: 289,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Teacher",
                 children: "My Teacher"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 287,
+                lineNumber: 290,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Parent",
                 children: "My Parent"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 288,
+                lineNumber: 291,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Colleague",
                 children: "My Colleague"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 289,
+                lineNumber: 292,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Partner",
                 children: "My Partner"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 290,
+                lineNumber: 293,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "My Girlfriend",
                 children: "My Girlfriend"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 291,
+                lineNumber: 294,
                 columnNumber: 17
               }, void 0)]
             }, void 0, true, {
               fileName: _jsxFileName$1,
-              lineNumber: 270,
+              lineNumber: 273,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 263,
+            lineNumber: 266,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "mb-3",
@@ -3234,7 +3236,7 @@ const Popup = () => {
               children: "Word Limit"
             }, void 0, false, {
               fileName: _jsxFileName$1,
-              lineNumber: 295,
+              lineNumber: 298,
               columnNumber: 15
             }, void 0), /* @__PURE__ */ jsxDEV("select", {
               id: "text5",
@@ -3248,68 +3250,68 @@ const Popup = () => {
                 children: "Select Word Limit"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 309,
+                lineNumber: 312,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "10 words",
                 children: "10 words"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 310,
+                lineNumber: 313,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "50 words",
                 children: "50 words"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 311,
+                lineNumber: 314,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "100 words",
                 children: "100 words"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 312,
+                lineNumber: 315,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "500 words",
                 children: "500 words"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 313,
+                lineNumber: 316,
                 columnNumber: 17
               }, void 0), /* @__PURE__ */ jsxDEV("option", {
                 value: "1000 words",
                 children: "1000 words"
               }, void 0, false, {
                 fileName: _jsxFileName$1,
-                lineNumber: 314,
+                lineNumber: 317,
                 columnNumber: 17
               }, void 0)]
             }, void 0, true, {
               fileName: _jsxFileName$1,
-              lineNumber: 301,
+              lineNumber: 304,
               columnNumber: 15
             }, void 0)]
           }, void 0, true, {
             fileName: _jsxFileName$1,
-            lineNumber: 294,
+            lineNumber: 297,
             columnNumber: 13
           }, void 0), /* @__PURE__ */ jsxDEV("div", {
             className: "flex items-start mb-3"
           }, void 0, false, {
             fileName: _jsxFileName$1,
-            lineNumber: 317,
+            lineNumber: 320,
             columnNumber: 13
           }, void 0)]
         }, void 0, true, {
           fileName: _jsxFileName$1,
-          lineNumber: 161,
+          lineNumber: 164,
           columnNumber: 11
         }, void 0)]
       }, void 0, true, {
         fileName: _jsxFileName$1,
-        lineNumber: 152,
+        lineNumber: 155,
         columnNumber: 9
       }, void 0), /* @__PURE__ */ jsxDEV("button", {
         onClick: handleSubmit,
@@ -3320,23 +3322,23 @@ const Popup = () => {
             className: "w-5 h-5 border-t-2 border-b-3 items-center border-green-900 rounded-full animate-spin"
           }, void 0, false, {
             fileName: _jsxFileName$1,
-            lineNumber: 327,
+            lineNumber: 330,
             columnNumber: 15
           }, void 0) : /* @__PURE__ */ jsxDEV("span", {
             children: " Prompt Me "
           }, void 0, false, {
             fileName: _jsxFileName$1,
-            lineNumber: 329,
+            lineNumber: 332,
             columnNumber: 15
           }, void 0)
         }, void 0, false, {
           fileName: _jsxFileName$1,
-          lineNumber: 325,
+          lineNumber: 328,
           columnNumber: 11
         }, void 0)
       }, void 0, false, {
         fileName: _jsxFileName$1,
-        lineNumber: 321,
+        lineNumber: 324,
         columnNumber: 9
       }, void 0), /* @__PURE__ */ jsxDEV("div", {
         className: "outputDiv w-full",
@@ -3346,29 +3348,29 @@ const Popup = () => {
           children: "Generated Magic Response \u{1FA84}"
         }, void 0, false, {
           fileName: _jsxFileName$1,
-          lineNumber: 335,
+          lineNumber: 338,
           columnNumber: 11
         }, void 0), /* @__PURE__ */ jsxDEV("span", {
           className: "block p-2.5 w-full  text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 ",
           children: displayPromptResponse
         }, void 0, false, {
           fileName: _jsxFileName$1,
-          lineNumber: 350,
+          lineNumber: 353,
           columnNumber: 11
         }, void 0)]
       }, void 0, true, {
         fileName: _jsxFileName$1,
-        lineNumber: 334,
+        lineNumber: 337,
         columnNumber: 9
       }, void 0)]
     }, void 0, true, {
       fileName: _jsxFileName$1,
-      lineNumber: 130,
+      lineNumber: 133,
       columnNumber: 7
     }, void 0)
   }, void 0, false, {
     fileName: _jsxFileName$1,
-    lineNumber: 129,
+    lineNumber: 132,
     columnNumber: 5
   }, void 0);
 };

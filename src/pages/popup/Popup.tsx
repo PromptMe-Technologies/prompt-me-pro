@@ -11,7 +11,7 @@ import { Configuration, OpenAIApi } from "openai";
 
 // @ts-ignore
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -34,6 +34,9 @@ const Popup = () => {
     writingStyle: "",
     decideTone: "",
     targetAudience: "",
+    role: "system",
+    content:
+      "You are a helpful prompt generation assistant. Generate short text prompts based on the user's specifications.",
     wordLimit: "",
   });
 
